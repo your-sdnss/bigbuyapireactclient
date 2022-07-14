@@ -1,38 +1,68 @@
-.App {
+body{
+  background-color: #2f2f2f;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button{
+  width: 300px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+  height: 50px;
+  color: black;
+}
+
+ul{
+  margin-left: 50px;
+  margin-right: 50px;
+  list-style: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li{
+  font-size: 20px;
+  font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.date{
+  width: 400px;
+  margin: 30px;
+  height: 100px;
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containerChanges{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "changes dates";
+}
+
+.dates{
+  color: azure;
+  grid-area: dates;
+}
+
+.changes{
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: changes;
 }
